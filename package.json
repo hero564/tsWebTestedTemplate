@@ -1,0 +1,33 @@
+{
+  "name": "tswebtestedtemplate",
+  "version": "1.0.0",
+  "description": "Template for typescript project tested with jest and webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "compile": "tsc -p ./src/tsconfig.json",
+    "build": "webpack --mode production",
+    "build-dev": "webpack --mode development",
+    "full-build": "npm run test && npm run compile && npm run build",
+    "full-build-dev": "npm run test && npm run compile && npm run build-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hero564/tsWebTestedTemplate.git"
+  },
+  "keywords": ["ts", "typescript", "jest", "test", "template", "project"],
+  "author": "Volodymyr Kushnir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hero564/tsWebTestedTemplate/issues"
+  },
+  "homepage": "https://github.com/hero564/tsWebTestedTemplate#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "typescript": "^5.5.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
